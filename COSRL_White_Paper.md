@@ -136,4 +136,7 @@ There is no third path.
 
 Ω°
 “All COSRL files including this white paper are cryptographically sealed and publicly timestamped. See the HASHLOG.txt file in the official repository for verification.”
-https://github.com/BrendonKelly/COSRL-Licensing-Protocol
+https://github.com/BrendonKelly/COSRL-Licensing-ProtocolForm URL: [https://forms.gle/your-real-form-code](https://forms.gle/your-real-form-code)
+Form URL: [https://forms.gle/your-real-form-code](https://forms.gle/your-real-form-code)
+
+ 
