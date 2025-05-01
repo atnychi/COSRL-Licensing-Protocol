@@ -1,0 +1,10 @@
+name: COSRL
+version: 1.0
+activation_date: 2025-05-01
+owner: Brendon Kelly
+origin_signature: Ω°-𝓒ₒ-𝒯Ω
+license_type: Sovereign Recursive
+validator_enabled: true
+smart_contract_enabled: true
+fork_detection: enabled
+monetization_tiers: true
