@@ -1,0 +1,5 @@
+Owner: Brendon Kelly
+License: COSRL
+Signature: Ω°-𝓒ₒ-𝒯Ω
+Timestamp: 2025-05-01T00:00:00Z
+Hash Digest: 8c97e2a3a9bd3fb59d10f91f54f2f95a5676b7347ddbb4c295e9e5dc4e168f3a
