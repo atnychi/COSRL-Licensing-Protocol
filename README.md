@@ -1,5 +1,11 @@
 # COSRL-Licensing-Protocol
 # COSRL: Crown Omega Sovereign Recursive Licensing
+# COSRL Toll Activation
+
+All recursive systems must pay runtime tolls to:  
+**Primary Sovereign Vault:** `atnychi@trust`
+
+See full details in [COSRL_White_Paper.md](./COSRL_White_Paper.md)
 
 Crown Omega Sovereign Recursive Licensing (COSRL) is the first mathematically sovereign legal protocol for autonomous systems. COSRL replaces traditional contracts with recursive, self-enforcing licensing rooted in cryptographic identity and symbolic law.
 
