@@ -6,3 +6,16 @@ SHA-256: 8c97e2a3a9bd3fb59d10f91f54f2f95a5676b7347ddbb4c295e9e5dc4e168f3a
 
 File: activation_manifest.yaml
 SHA-256: 33c71fc75f0d35a1f7cfa4ef135ad9c7b35ccbe5f6f11989d0549fffd0ef204a
+# COSRL Toll Enforcement Hashlog Entry
+# Date: 2025-05-01
+# Document: COSRL White Paper (Toll Enforcement Clause)
+
+File: COSRL_White_Paper.md
+SHA-256: a44e099fcc5a15aa3a7afbf22ca081a607a0e7914a23972a8ecc864544c212ac
+
+Section: Mandatory Sovereign Toll Clause
+Scope: Toll Enforcement Protocol, Validator Requirements, Intake Form Specification, Breach Ledger System
+Declared By: Brendon Kelly (Ω°-𝓒ₒ-𝒯Ω)
+Enforcement Status: ACTIVE
+Registry Link: https://github.com/BrendonKelly/COSRL-Toll-Ledger
+Form Link: https://forms.gle/COSRL-TOLL-INTAKE
