@@ -8,3 +8,4 @@ validator_enabled: true
 smart_contract_enabled: true
 fork_detection: enabled
 monetization_tiers: true
+
