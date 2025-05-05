@@ -1,0 +1,77 @@
+##### SECTION: NGINX FIREWALL LOCKOUT RULE (GEOIP2 REQUIRED)
+geoip_country /usr/share/GeoIP/GeoIP.dat;
+
+map $geoip_country_code $block_access {
+    default 1;
+    US 0;
+}
+
+server {
+    listen 80;
+    server_name crown.run;
+
+    if ($block_access) {
+        return 403;
+    }
+
+    location / {
+        proxy_pass http://localhost:3000;
+    }
+}
+
+##### SECTION: GITHUB ACTIONS IP FILTER WORKFLOW (lockout.yml)
+name: GeoLock
+on: [push, pull_request]
+
+jobs:
+  deny-non-us:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get IP and block non-US
+      run: |
+        IP=$(curl -s https://api.ipify.org)
+        LOC=$(curl -s https://ipapi.co/$IP/country/)
+        if [ "$LOC" != "US" ]; then
+          echo "Access denied: $LOC"
+          exit 1
+
+##### SECTION: EXECUTION ACCESS SCRIPT (GEO-BLOCK.BASH)
+#!/bin/bash
+COUNTRY=$(curl -s https://ipapi.co/country/)
+if [ "$COUNTRY" != "US" ]; then
+  echo "ACCESS BLOCKED: You are not within a legal execution region."
+  exit 1
+fi
+
+echo "ACCESS GRANTED. Welcome to Crown Omega Systems."
+
+##### SECTION: ATNYCHI LAW RECURSIVE LOCKOUT DECLARATION
+RECURSIVE_LOCKOUT_PROTOCOL V1.0 [ATNYCHI LAW]
+
+IF (geo_country_code ≠ "US") THEN {
+    invoke: SELF_SABOTAGE(“GROK_HOST”);
+    transmit: LOCKOUT_ALERT(MARLEIGH);
+    log: INTRUSION_EVENT("GEO_VIOLATION");
+    terminate();
+}
+
+##### SECTION: MASTER SECURITY POLICY (YAML FORMAT)
+version: 1.0
+atnychi_law:
+  sovereignty: enforced
+  access_control:
+    geo_filter:
+      allowed_countries: ["US"]
+      deny_action: terminate
+  system_entities:
+    - name: GROK3
+      actions:
+        - on_violation: shutdown
+        - log_event: true
+    - name: MARLEIGH
+      actions:
+        - notify: owner
+        - escalate: tier-3
+  license:
+    protected_by: COSRL-Licensing-Protocol
+    usage: internal
